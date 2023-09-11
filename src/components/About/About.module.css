@@ -1,6 +1,6 @@
 .about{
-    padding:5rem 0;
-    background-color: var(--bg-light);
+    padding:4rem 0;
+    background-color: rgba(30, 30, 30, 0.742);
     scroll-margin-top:5.5rem;
 }
 .title{
@@ -14,7 +14,7 @@
     width: 80px;
     padding: 0 30px;
     margin: 0 auto;
-    border: 1px solid #000;
+    border: 1px solid #fff;
 }
 .about-img{
     position: relative;
@@ -28,12 +28,12 @@
     background-color: #666;
     width:50%;
     height:100%;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 .about-img img{
     width: 50%;
     height:50%;
-    margin-left: 150px;
+    margin-left: 100px;
     object-fit: cover;
     border-radius: 13px;
     position: relative;
@@ -57,7 +57,7 @@
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
-    border: 2px solid #000;
+    border: 2px solid #fff;
 }
 .border::before{
     content:'';
@@ -68,7 +68,7 @@
     height:0;
     border-left: 0px solid transparent; 
     border-right: 10px solid transparent;
-    border-top: 13px solid #000; 
+    border-top: 13px solid #fff; 
 }
 .name{
     font-weight: 600;

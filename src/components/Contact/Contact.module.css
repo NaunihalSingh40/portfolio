@@ -1,5 +1,6 @@
 .contact{
     padding:5rem 0;
+    background: rgb(30,30,30);
 }
 .title{
     text-align: center;
@@ -9,7 +10,7 @@
     width:80px;
     padding:0 30px;
     margin:0 auto;
-    border: 1px solid #000;
+    border: 1px solid #fff;
 }
 .title span{
     color:var(--danger-color);
@@ -54,7 +55,16 @@
 }
 
 @media screen and(max-width:768px) {
-    .contact-form{
+    .grid{
         grid-template-columns: 1fr;
+    }
+    .contact-form{
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+        gap:10px;
     }
 }

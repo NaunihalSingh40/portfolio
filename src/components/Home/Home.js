@@ -11,6 +11,19 @@ function Home() {
         },3000);
         return()=> clearInterval(interval);
     })
+    const downloadTxtFile = () => {
+        fetch('../../../public/Gurjeet Kaur Resume.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'SamplePDF.pdf';
+                alink.click();
+            })
+        })
+    }
   return (
     <section id="home">
         <div className="container">
@@ -33,6 +46,11 @@ function Home() {
                         <div className={styles.link}>
                             <a href="#about">Read About Me</a>
                         </div>
+                    </div>
+                    <div className={styles.button}>
+                        {/* <a href="Gurjeet Kaur Resume.pdf" download="Gurjeet Kaur Resume.pdf"> */}
+                            <button className={styles.res} value="download" onClick={downloadTxtFile}>Download Resume</button>
+                        {/* </a> */}
                     </div>
                     <div classname={styles.scroll}>
                         <a href="#about">

@@ -25,7 +25,7 @@ const ExperienceSlider = ({experience, nextExperience, previousExperience}) => {
         <div className={`${styles.experience} ${fadeIn ? styles["fade-in"] : ''}`}>
             <p className={styles.name}>{experience.name}</p>
             <p className={styles.message}>{experience.message}</p>
-            <p className={styles.message}>Certificate :<a href={experience.url}> Link</a></p>
+            <p className={styles.certificate}>Certificate :<a href={experience.url} className={styles.cer}> Link</a></p>
         </div>
         <div className={styles.buttons}>
             <button className={styles["slider-button"]}>

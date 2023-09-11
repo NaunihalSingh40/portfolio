@@ -1,5 +1,6 @@
 .portfolio{
     padding: 5rem 0;
+    background: rgb(30,30,30);
 }
 .title{
     text-align: center;
@@ -12,7 +13,7 @@
     width: 80px;
     padding: 0 30px;
     margin: 0 auto;
-    border: 1px solid #000;
+    border: 1px solid #fff;
 }
 .cards{
     display: grid;
