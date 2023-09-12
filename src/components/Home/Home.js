@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Home.module.css'
 import GurjeetPdf from '../../Gurjeet Kaur Resume.pdf'
-
+// const PDF_FILE_URL = "http://localhost:3000/Gurjeet Kaur Resume.pdf";
 function Home() {
     const items = ["Designer","Web Developer"];
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -12,19 +12,22 @@ function Home() {
         },3000);
         return()=> clearInterval(interval);
     })
-    const downloadTxtFile = () => {
-        fetch('../../../public/Gurjeet Kaur Resume.pdf').then(response => {
-            response.blob().then(blob => {
-                // Creating new object of PDF file
-                const fileURL = window.URL.createObjectURL(blob);
-                // Setting various property values
-                let alink = document.createElement('a');
-                alink.href = fileURL;
-                alink.download = 'Gurjeet.pdf';
-                alink.click();
-            })
-        })
-    }
+    // const downloadTxtFile = (url) => {
+    //     fetch(url)
+    //     .then((response) => response.blob())
+    //         .then((blob) => {
+    //             // Creating new object of PDF file
+    //             const fileURL = window.URL.createObjectURL(new Blob([blob]));
+    //             // Setting various property values
+    //             const fileName = url.split("/").pop();
+    //             let alink = document.createElement('a');
+    //             alink.href = fileURL;
+    //             alink.setAttribute("download", fileName);
+    //             document.body.appendChild(alink);
+    //             alink.click();
+    //             alink.remove();
+    //         });
+    // }
   return (
     <section id="home">
         <div className="container">
@@ -49,8 +52,8 @@ function Home() {
                         </div>
                     </div>
                     <div className={styles.button}>
-                        <a href={GurjeetPdf} download="Gurjeet Kaur Resume.pdf" target="_blank" rel="noopener noeferrer">
-                            <button className={styles.res} value="download" onClick={downloadTxtFile}>Download Resume</button>
+                        <a href={GurjeetPdf} download="Gurjeet.pdf" target="_blank">
+                            <button className={styles.res} value="download" >Download Resume</button>
                         </a>
                     </div>
                     <div classname={styles.scroll}>
