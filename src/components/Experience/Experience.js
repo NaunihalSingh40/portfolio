@@ -21,7 +21,7 @@ function Experience() {
     };
 
   return (
-    <section id="portfolio" className={styles["testimonial-slider"]}>
+    <section id="testimonial" className={styles["testimonial-slider"]}>
         <Reveal>
             <div className="container">
                 <h2>Experience</h2>

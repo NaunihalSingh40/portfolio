@@ -18,6 +18,11 @@
 .contact-form{
     grid-template-columns:repeat(2, 1fr);
     padding-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:2rem;
+    margin: 4rem 5vw;
+    padding: 0;
 }
 .content{
     align-self: start;
@@ -53,6 +58,7 @@
     font-size: 1.4rem;
     margin-bottom: 20px;
 }
+
 
 @media screen and(max-width:768px) {
     .grid{

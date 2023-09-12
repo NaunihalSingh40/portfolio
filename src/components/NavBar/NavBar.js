@@ -7,7 +7,7 @@ const navLinks = [
     {id:"about", label:"About"},
     {id:"skills", label:"Skills"},
     {id:"portfolio", label:"Projects"},
-    {id:"experience", label:"Experience"},
+    {id:"testimonial", label:"Experience"},
     {id:"contact", label:"Contact"},
 ]
 function NavBar() {
@@ -99,7 +99,7 @@ function NavBar() {
                         </a>
                     </div>
                     <div className={`${styles["navbar-links"]} ${showLinks ? styles.show : ""}`}>
-                        <ul>
+                        <ul onClick={() => setShowLinks(false)}>
                             {navLinks.map((link) =>(
                                 <NavBarLinks
                                 key={link.id}

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import styles from './ContactForm.module.css'
 
 function ContactForm() {
@@ -6,7 +7,40 @@ function ContactForm() {
     const [enteredName, setEnteredName] = useState('');
     const [enteredEmail, setEnteredEmail] = useState('');
     const [enteredMessage, setEnteredMessage] = useState('');
-    const [touchedFields, setTouchedFields] = useState([]);   
+    const [touchedFields, setTouchedFields] = useState([]);  
+    
+    const form = useRef();
+
+    const handleSubmit = (e) =>{
+
+        e.preventDefault();
+
+   emailjs.sendForm('service_z9fkcpj', 'template_u0slaia', form.current, 'AAtt1u8cxYVlwJGQT')
+     .then((result) => {
+         console.log(result.text);
+         console.log("Message sent");
+     }, (error) => {
+         console.log(error.text);
+     });
+
+       setTouchedFields(['name', 'email', 'message']);
+
+       if(enteredName.trim() === '' || enteredEmail.trim() === '' || enteredMessage.trim() === ''){
+           return;
+       }
+
+       const formData = {
+           name:enteredName,
+           email:enteredEmail,
+           message:enteredMessage,
+       }
+
+       console.log(formData);
+       setEnteredName('');
+       setEnteredEmail('');
+       setEnteredMessage('');
+       setTouchedFields([]);
+   };
 
     const handleInputChange = (e) =>{
         const {name, value} = e.target;
@@ -28,27 +62,7 @@ function ContactForm() {
         }
     };
 
-    const handleSubmit = (e) =>{
-        e.preventDefault();
 
-        setTouchedFields(['name', 'email', 'message']);
-
-        if(enteredName.trim() === '' || enteredEmail.trim() === '' || enteredMessage.trim() === ''){
-            return;
-        }
-
-        const formData = {
-            name:enteredName,
-            email:enteredEmail,
-            message:enteredMessage,
-        }
-
-        console.log(formData);
-        setEnteredName('');
-        setEnteredEmail('');
-        setEnteredMessage('');
-        setTouchedFields([]);
-    };
 
     const isFieldInvalid = (fieldName) =>{
         if(fieldName === 'name'){
@@ -66,7 +80,7 @@ function ContactForm() {
     }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form ref={form} onSubmit={handleSubmit}>
         <div className={`${styles["form-control"]} ${isFieldInvalid("name") && styles.invalid}`}>
             <input type="text" name="name" placeholder="Name" value={enteredName} onChange={handleInputChange} onBlur={handleInputBlur} autoComplete="off"/>
             {isFieldInvalid('name') && (<p className={styles.error}>Please enter your name.</p>)}

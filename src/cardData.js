@@ -17,14 +17,14 @@ const cardData = [
         id:"3",
         title:"Random Quote Generator",
         img:"./images/quote.png",
-        url:"https://github.com/gurisondh2002/random-quote-generator-react",
+        url:"https://random-quote-generator-react-one.vercel.app/",
         desc:"A web application that allows to fetch the random quotes.It utilizes the Random Quote API to fetch quotes data."
     },
     {
         id:"4",
         title:"Food App",
         img:"./images/foodie.png",
-        url:"https://github.com/gurisondh2002/food-app-react",
+        url:"https://food-app-react-phi.vercel.app/",
         desc:"Leveraged React's capabilities to craft a visually appealing and user-centric food application. Successfully implemented features like menu browsing, order management."
     },
     {
@@ -38,7 +38,7 @@ const cardData = [
         id:"6",
         title:"Calculator",
         img:"./images/calc.png",
-        url:"https://github.com/gurisondh2002/calc-react",
+        url:"https://calc-react-green.vercel.app/",
         desc:"Developed a dynamic calculator application using React, leveraging its component-based architecture to create a user-friendly interface.",
     },
 ];

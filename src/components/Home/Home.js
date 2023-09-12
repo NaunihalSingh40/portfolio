@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Home.module.css'
+import GurjeetPdf from '../../Gurjeet Kaur Resume.pdf'
 
 function Home() {
     const items = ["Designer","Web Developer"];
@@ -48,9 +49,9 @@ function Home() {
                         </div>
                     </div>
                     <div className={styles.button}>
-                        {/* <a href="Gurjeet Kaur Resume.pdf" download="Gurjeet Kaur Resume.pdf"> */}
+                        <a href={GurjeetPdf} download="Gurjeet Kaur Resume.pdf" target="_blank" rel="noopener noeferrer">
                             <button className={styles.res} value="download" onClick={downloadTxtFile}>Download Resume</button>
-                        {/* </a> */}
+                        </a>
                     </div>
                     <div classname={styles.scroll}>
                         <a href="#about">
