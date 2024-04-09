@@ -8,7 +8,7 @@ function Portfolio() {
   return (
     <section id="portfolio" className={styles.portfolio}>
         <Reveal>
-        <div className="container">
+        {/* <div className="container">
             <div className={styles.title}>
                 <h2>
                     Selected<span>Works</span>
@@ -24,7 +24,7 @@ function Portfolio() {
                     desc = {item.desc}/>
                 ))}
             </ul>
-        </div>
+        </div> */}
         </Reveal>
     </section>
   );

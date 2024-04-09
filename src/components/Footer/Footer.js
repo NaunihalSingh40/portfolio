@@ -8,7 +8,7 @@ function Footer() {
         <div className="container">
             <div className={styles.flex}>
                 <div>
-                    <p>&copy; 2023 by Gurjeet Kaur. All rights reserved.</p>
+                    <p>&copy; 2024 by Naunihal Singh. All rights reserved.</p>
                 </div>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -19,10 +19,10 @@ function Footer() {
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div className={styles.icons}>
-                    <a href="https://github.com/gurisondh2002">
+                    <a href="https://github.com/NaunihalSingh40">
                         <BsGithub size={30}/>
                     </a>
-                    <a href="https://www.linkedin.com/in/gurjeet-kaur-5ba446210/">
+                    <a href="https://www.linkedin.com/in/naunihal-singh/">
                         <BsLinkedin size={30}/>
                     </a>
                 </div>

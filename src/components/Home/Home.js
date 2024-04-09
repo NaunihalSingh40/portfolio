@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Home.module.css'
-import GurjeetPdf from '../../Gurjeet Kaur Resume.pdf'
+import resume2023 from '../../resume 2023.pdf'
 // const PDF_FILE_URL = "http://localhost:3000/Gurjeet Kaur Resume.pdf";
 function Home() {
     const items = ["Designer","Web Developer"];
@@ -35,7 +35,7 @@ function Home() {
                 <div classNmae={styles["home-content"]}>
                     <div className={styles["home-title"]}>
                         <h2>Hey, I'm</h2>
-                        <h1 style={{color: "lightcoral"}}>Gurjeet Kaur</h1>
+                        <h1 style={{color: "lightcoral"}}>Naunihal Singh</h1>
                     </div>
                     <div className={styles["text-wrapper"]}>
                         <p>
@@ -52,7 +52,7 @@ function Home() {
                         </div>
                     </div>
                     <div className={styles.button}>
-                        <a href={GurjeetPdf} download="Gurjeet.pdf" target="_blank">
+                        <a href={resume2023} download="resume2023.pdf" target="_blank">
                             <button className={styles.res} value="download" >Download Resume</button>
                         </a>
                     </div>
@@ -64,8 +64,8 @@ function Home() {
                 </div>
                 <div className={styles.circle}>
                     <div className={styles.content}>
-                        <img src="./images/profile.jpeg" alt="Gurjeet Kaur"/>
-                        <h2>Gurjeet Kaur 
+                        <img src="./images/me1.jpg" alt="Naunihal Singh"/>
+                        <h2>Naunihal Singh 
                             <br/> <span/> Web Developer</h2>
                         <a href="#contact">Hire Me</a>
                     </div>

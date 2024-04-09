@@ -16,13 +16,13 @@ export default function About() {
             </div>
             <div className="grid">
                 <div className={styles["about-img"]}>
-                    <img src="./images/profile.jpeg" alt="Gurjeet Kaur"/>
+                    <img src="./images/me1.jpg" alt="Naunihal Singh"/>
                 </div>
                 <div className={styles["about-content"]}>
                     <h3 className={styles.border}>Hi There!</h3>
                     <p>
-                        I'm <span className={styles.name}>Gurjeet Kaur</span>, An experienced web developer proficient in a wide range of technologies and frameworks. Skilled in HTML, CSS, and
-JavaScript for building responsive user interfaces. Expertise in React and Next.js for creating dynamic and efficient
+                        I'm <span className={styles.name}>Naunihal Singh</span>, An experienced web developer proficient in a wide range of technologies and frameworks. Skilled in HTML, CSS, and
+JavaScript for building responsive user interfaces. Expertise in React for creating dynamic and efficient
 front-end applications. Proficient in Node.js for server-side scripting.
                     </p>
                 </div>

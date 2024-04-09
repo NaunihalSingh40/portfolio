@@ -94,7 +94,7 @@ export default function Skills() {
                 </div>
             </div>
         </div>
-        {/* <div className={styles.bottom}>
+        <div className={styles.bottom}>
             <div className={`${styles.flex} container`}>
                 <div>
                     <h3>I'm available for work</h3>
@@ -103,7 +103,7 @@ export default function Skills() {
                 <a href="#contact">Contact Me</a>
                 </div>
             </div>
-        </div> */}
+        </div>
         </Reveal>
     </section>
   )

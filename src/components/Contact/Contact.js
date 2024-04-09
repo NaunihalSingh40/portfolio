@@ -25,12 +25,12 @@ function Contact() {
                         <div className={styles["contact-wrapper"]}>
                             <TbPhoneCall size={50}/>
                             <span>Call Me</span>
-                            <h3>+91 6283973058</h3>
+                            <h3>+91 8427434565</h3>
                         </div>
                         <div className={styles["contact-wrapper"]}>
                             <HiOutlineMail size={50}/>
                             <span>Email</span>
-                            <a href="mailto:gurisondh2002@gmail.com">gurisondh2002@gmail.com</a>
+                            <a href="mailto:ns906227@gmail.com">ns906227@gmail.com</a>
                         </div>
                     </div>
                     <div>

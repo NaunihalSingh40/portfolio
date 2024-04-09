@@ -6,7 +6,7 @@ const navLinks = [
     {id:"home", label:"Home"},
     {id:"about", label:"About"},
     {id:"skills", label:"Skills"},
-    {id:"portfolio", label:"Projects"},
+    // {id:"portfolio", label:"Projects"},
     {id:"testimonial", label:"Experience"},
     {id:"contact", label:"Contact"},
 ]
@@ -90,9 +90,9 @@ function NavBar() {
                 <div className={styles["navbar-wrapper"]}>
                     <div>
                         <a href="index.html" className={styles.logo}>
-                            <img style={{width: 40, height: 40, objectFit:'cover', borderRadius: 50}} src="./images/logo.jpeg" alt="Gurjeet Kaur"/>
+                            <img style={{width: 40, height: 40, objectFit:'cover', borderRadius: 50}} src="./images/logo1.jpg" alt="Naunihal Singh"/>
                             <div className={styles["logo-inner"]}>
-                                <span classNmae={styles.top}>Gurjeet Kaur</span>
+                                <span classNmae={styles.top}>Naunihal Singh</span>
                                 <br/>
                                 <span className={styles.bottom}>Web Developer</span>
                             </div>
